@@ -1,0 +1,1 @@
+import { useState } from "react"; import { LoginScreen } from "../src/LoginScreen"; import { HomeScreen } from "../src/HomeScreen"; export default function Index(){const [signedIn,setSignedIn]=useState(false);return signedIn?<HomeScreen onSignOut={()=>setSignedIn(false)}/>:<LoginScreen onSignIn={()=>setSignedIn(true)}/>;}
